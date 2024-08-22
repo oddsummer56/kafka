@@ -1,5 +1,7 @@
 from kafka import KafkaConsumer
 from json import loads
+import time
+from datetime import datetime
 
 consumer = KafkaConsumer(
         'chat',
@@ -15,7 +17,8 @@ print("메세지 대기 중...")
 
 try:
     for m in consumer:
-        print(f"xxxxxxxxxxxxxxxx")
+        data = m.value
+        print(f"[FRIEND]:[{datetime.fromtimestamp(data['time'])}] {data['message']}")
 
 except KeyboardInterrupt:
     print("채팅종료")
