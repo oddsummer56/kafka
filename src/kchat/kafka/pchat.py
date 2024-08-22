@@ -4,7 +4,8 @@ import time
 
 p = KafkaProducer(
     
-    bootstrap_servers=['localhost:9092'],
+    #bootstrap_servers=['localhost:9092'],
+    bootstrap_servers=['ec2-43-203-238-182.ap-northeast-2.compute.amazonaws.com:9092'],
     value_serializer=lambda x: json.dumps(x).encode('utf-8')
 )
 
