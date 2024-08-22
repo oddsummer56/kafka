@@ -41,4 +41,14 @@ $ python src/kchat/kafka/con.py
 ```
 ![image](https://github.com/user-attachments/assets/0461cfa7-8ef7-490d-9532-78c41b2b0b39)
 
+## Chat
+#### Producer
+```python
+$ python src/kchat/kafka/pchat.py
+```
+#### Consumer
+```python
+$ python src/kchat/kafka/cchat.py
+```
+![image](https://github.com/user-attachments/assets/a6c811c6-348a-43c3-b852-85862da41b13)
 
