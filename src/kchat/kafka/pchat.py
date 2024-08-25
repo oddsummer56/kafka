@@ -22,7 +22,7 @@ while True:
     p.send('chat',value=data)
     p.flush()
 
-
+print("프로그램 종료")
 
 
 
